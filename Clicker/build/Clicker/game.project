@@ -1,0 +1,9 @@
+[bootstrap]
+main_collection = /main/main.collectionc
+
+[android]
+input_method = HiddenInputField
+
+[project]
+title = Clicker
+

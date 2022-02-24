@@ -1,0 +1,42 @@
+images {
+  image: "/assets/flag.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
+images {
+  image: "/assets/fons.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
+images {
+  image: "/assets/hairfactory.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
+images {
+  image: "/assets/mailhair.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
+images {
+  image: "/assets/recolector.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
+animations {
+  id: "BaldAnim"
+  images {
+    image: "/assets/baldman1.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_8
+  }
+  images {
+    image: "/assets/baldman2.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_8
+  }
+  images {
+    image: "/assets/baldman3.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_8
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 3
+  flip_horizontal: 0
+  flip_vertical: 0
+}
+margin: 0
+extrude_borders: 2
+inner_padding: 0

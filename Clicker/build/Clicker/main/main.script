@@ -1,0 +1,47 @@
+hair = 0
+harir_mails=0
+hair_factories=0
+hair_removal_centers=0
+
+
+function init(self)
+	msg.post(".", "acquire_input_focus")
+end
+
+function final(self)
+	-- Add finalization code here
+	-- Learn more: https://defold.com/manuals/script/
+	-- Remove this function if not needed
+end
+
+function update(self, dt)
+	label.set_text("/BaldMan#Hairs1", hair)
+end
+
+function on_message(self, message_id, message, sender)
+	-- Add message-handling code here
+	-- Learn more: https://defold.com/manuals/message-passing/
+	-- Remove this function if not needed
+end
+
+function on_input(self, action_id, action)
+	if action_id == hash("touch") and action.pressed then
+		local spriteBald = go.get_position("BaldMan")
+		local mousePosX = action.x
+		local mousePosY = action.y
+		local minX = spriteBald.x - 160
+		local minY = spriteBald.y - 160
+		local maxX = spriteBald.x + 160
+		local maxY = spriteBald.y + 160
+		if mousePosX >= minX and mousePosX <= maxX and mousePosY >= minY and mousePosY <= maxY then
+			print("click")
+			hair = hair + 1
+		end
+	end
+end
+
+function on_reload(self)
+	-- Add reload-handling code here
+	-- Learn more: https://defold.com/manuals/hot-reload/
+	-- Remove this function if not needed
+end
